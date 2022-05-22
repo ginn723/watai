@@ -1,0 +1,384 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Microsoft JhengHei', 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.main {
+  background-image: url("../image/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.main .cs-icon {
+  top: 250px;
+  right: -10px;
+  z-index: 10;
+}
+
+.main .bg {
+  background: #fff;
+  z-index: -999;
+  -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 46px;
+}
+
+.main .bg .topbar {
+  padding-left: 360px;
+}
+
+.main .bg .topbar .logo {
+  top: 20px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main .bg .topbar .logo {
+    left: 8%;
+  }
+}
+
+.main .bg .topbar .logo :after {
+  content: '';
+  background: #fff;
+  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  width: 225px;
+  height: 57px;
+  position: absolute;
+  left: -16%;
+  top: -15%;
+  z-index: -2;
+}
+
+.main .bg .topbar .top-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: .8rem;
+  right: 360px;
+}
+
+.main .bg .topbar .top-info .time {
+  color: #969aa1;
+  padding: 0 1rem;
+}
+
+.main .bg .topbar .top-info .lang-select {
+  background: #3c3c40;
+  border-radius: 3px;
+  padding: 3px 8px;
+}
+
+.main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .container .header {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.main .container .header .header-title p {
+  font-size: 26pt;
+  padding-left: 360px;
+}
+
+.main .container .header .header-title .here {
+  font-size: 20pt;
+  text-align: left;
+  padding-left: 360px;
+}
+
+.main .container .header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .container .header .header-content .signin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 70%;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .container .header .header-content .signin {
+    top: 120%;
+  }
+}
+
+.main .container .header .header-content .signin .signin-left input {
+  width: 171px;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.main .container .header .header-content .signin .signin-right .btn-login {
+  width: 90px;
+  height: 75px;
+  margin-left: 10px;
+}
+
+.main .container .header .header-content .signin .signin-right .btn-login:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.main .container .header .car-list {
+  margin-top: 85px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .container .header .car-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 130px;
+    padding-left: 50px;
+  }
+  .main .container .header .car-list li {
+    margin-top: 20px;
+  }
+}
+
+.main .footer {
+  text-align: center;
+}
+
+.main .footer .p1 {
+  padding: 10px 0;
+  height: 46px;
+  font-size: 16pt;
+  background-image: -webkit-gradient(linear, left top, right top, from(#562fda), color-stop(#3163f5), color-stop(#2d79f8), color-stop(#2d88f8), color-stop(#2d7df8), color-stop(#3a53ee), to(#5333dc));
+  background-image: linear-gradient(to right, #562fda, #3163f5, #2d79f8, #2d88f8, #2d7df8, #3a53ee, #5333dc);
+  -webkit-box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -2px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.main .footer .p1 a:hover {
+  font-weight: bold;
+  font-size: 17pt;
+}
+
+.main .footer .p2 {
+  padding: 10px 0;
+  background-color: #222222;
+  color: #969aa1;
+  font-size: 15pt;
+}
+
+.mt8 {
+  margin-top: 8px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-fixed {
+  position: fixed;
+}
+
+@media only screen and (max-width: 1200px) {
+  .d-none-m {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .d-none-s {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .width-m {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .width-s {
+    width: 40%;
+  }
+}
+/*# sourceMappingURL=all.css.map */

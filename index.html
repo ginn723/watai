@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>蛙設計</title>
+    <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/all.css" />
+  </head>
+  <body>
+    <div class="main">
+      <a href="javascript:void(0)">
+        <img class="cs-icon p-fixed shake" src="./image/cs-icon.png" alt="">
+      </a>
+      <div class="bg">
+        <div class="topbar" data-aos="fade-down">
+          <div class="logo p-absolute">
+            <a href="javascript:void(0)"
+              ><img src="./image/logo.png" alt="logo"
+            /></a>
+          </div>
+          <div class="top-info p-absolute">
+            <p class="time d-none-m">time</p>
+            <select class="lang-select text-white d-none-m">
+              <option class="lang-option" value="繁體中文">繁體中文</option>
+              <option class="lang-option" value="英文">英文</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="container">       
+        <div class="header">
+          <div class="header-title d-none-s" data-aos="fade-down">
+            <img class="header-text width-m" src="./image/header-text.png" alt="" />
+            <p class="text-white d-none-s d-none-m">Choose the car as far as you can</p>
+            <br /><br>
+            <p class="here text-white d-none-s d-none-m">Here?</p>
+          </div>
+          <div class="header-content p-relative" data-aos="zoom-in">
+             <img width="100%" src="./image/cars.png" alt="" />
+            <div class="signin p-absolute" data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1000">
+              <div class="signin-left">
+                <label for="user-amount">
+                  <input type="number" id="user-amount" placeholder="amount" />
+                </label>
+                <br />
+                <label for="user-password">
+                  <input
+                  class="mt8"
+                    type="password"
+                    id="user-password"
+                    placeholder="password"
+                  />
+                </label>
+              </div>
+              <div class="signin-right p-relative">
+                <input
+                class="btn-login"
+                  type="image"
+                  src="./image/btn-bg.png"
+                  alt="Login" onmouseover="this.src='./image/btn-bg2.png'" onmouseout="this.src='./image/btn-bg.png'"
+                />
+              </div>
+            </div>
+          </div>         
+            <ul class="car-list" data-aos="fade-up"
+               data-aos-anchor-placement="bottom-bottom">
+              <li class="shake-opacity">
+                <a href="#"><img class="width-m" src="./image/car1.png" alt="car1"></a>
+              </li>
+              <li class="shake-chunk">
+                <a href="#"><img class="width-m" src="./image/car2.png" alt="car1"></a>
+              </li>
+              <li class="shake-opacity">
+                <a href="#"><img class="width-m" src="./image/car3.png" alt="car1"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <p class="p1"><a class="text-white" href="https://www.cakeresume.com/me/ginn-lee">李巧諠 &nbsp | &nbsp Ginn Lee</a></p>
+          <p class="p2">Copyright © 2020 wataidesign.com</p>
+        </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
