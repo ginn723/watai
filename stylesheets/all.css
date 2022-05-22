@@ -150,7 +150,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  margin: 0 auto;
 }
 
 .main .cs-icon {
@@ -262,11 +261,9 @@ body {
   top: 70%;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 767px) {
   .main .container .header .header-content .signin {
-    margin-top: 20px;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    top: 30px;
   }
 }
 
@@ -294,8 +291,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -369,21 +368,9 @@ body {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .d-block-s {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 1200px) {
   .width-m {
-    max-width: 80%;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .width-s {
-    max-width: 50%;
+    width: 80%;
   }
 }
 /*# sourceMappingURL=all.css.map */
